@@ -75,7 +75,7 @@
     <div class='map-overlay' id='features'>
         <h2>Covid-19 Cases per 10k People</h2>
         <div id='text-description'>
-            <p>Hover over a state!</p>
+            <p>Hover over a county!</p>
         </div>
     </div>
     <div class='map-overlay' id='legend'></div>
@@ -145,7 +145,7 @@
                 ];
 
                 const legend = document.getElementById('legend');
-                legend.innerHTML = "<b>Population Density<br>(cases/10k residents)</b><br><br>";
+                legend.innerHTML = "<b>COVID Case Rates by County<br>(cases/10k residents)</b><br><br>";
 
                 layers.forEach((layer, i) => {
                     const color = colors[i];
